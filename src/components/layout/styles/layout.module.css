@@ -1,0 +1,33 @@
+html,
+body,
+:root {
+    margin: 0;
+    padding: 0;
+    --color-black-background: #010C15;
+    --color-blue-background: #011627;
+    --border-wrapper-color: #1E2D3D;
+    --border-wrapper-width: 1px;
+    --border-wrapper-style: solid;
+    --border-radius: 8px;
+}
+
+
+.container {
+    height: 100svh;
+    padding: 0;
+    background: var(--color-black-background);
+    padding: 3rem;
+}
+
+.wrapper {
+    background: var(--color-blue-background);
+    height: 100%;
+    border-color: var(--border-wrapper-color);
+    border-width: var(--border-wrapper-width);
+    border-style: var(--border-wrapper-style);
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
