@@ -1,8 +1,34 @@
-import React from 'react';
+import { useState } from 'react';
+import { Header, Container, Wrapper } from '../../components';
 
 function Home() {
+
+    // Setea el estado inicial en la página de inicio
+    const [activePage, setActivePage] = useState('_hello')
+
+
+    // Establece la página activa en el estado local
+    const handleBreadcrumbClick = (page) => {
+        setActivePage(page)
+    }
+
+
     return (
-        <div>Home</div>
+        <Container>
+            <Wrapper >
+                <Header
+                    name='Adrian Zamora'
+                    contact='_contact-me'
+                    home='_hello'
+                    about='_about-me'
+                    projects='_projects'
+                    activePage={activePage}
+                    handleBreadcrumbClick={handleBreadcrumbClick}
+                />
+
+                <p>HOME</p>
+            </Wrapper>
+        </Container>
     )
 }
 

@@ -1,0 +1,19 @@
+:root {
+    --border-color: #1E2D3D;
+    --border-width: 1px;
+    --border-style: solid;
+}
+
+.header {
+    height: 100%;
+    border-bottom-color: var(--border-color);
+    border-bottom-width: var(--border-width);
+    border-bottom-style: var(--border-style);
+    height: 56.19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+
+}

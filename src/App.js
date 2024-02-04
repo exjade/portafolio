@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import * as ROUTES from './constants/routes';
+
 
 const Home = lazy(() => import('./pages/home'));
 const About = lazy(() => import('./pages/about-me'));
@@ -12,12 +13,12 @@ function App() {
   return (
     <Router>
       <Suspense fallback={<div>...</div>} >
-        <Switch>
-            <Route path={ROUTES.HOME} component={Home} exact/>
-            <Route path={ROUTES.ABOUT} component={About} exact/>
-            <Route path={ROUTES.PROJECTS} component={Projects} exact/>
-            <Route path="*" component={NotFound} />
-        </Switch>
+        <Routes>
+            <Route path={ROUTES.HOME} element={<Home />} exact/>
+            <Route path={ROUTES.ABOUT} element={<About />} exact/>
+            <Route path={ROUTES.PROJECTS} element={<Projects />} exact/>
+            <Route path="*" element={<NotFound />} />
+        </Routes>
       </Suspense>
     </Router>
   );
