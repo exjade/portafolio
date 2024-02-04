@@ -3,19 +3,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Poppins Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* 300 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-/* 400 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-/* 500 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-;
-/* 600 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-/* 700 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* Fira Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
 
 /* SCROLLBAR */
 /* width */

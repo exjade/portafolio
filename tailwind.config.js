@@ -17,16 +17,15 @@ module.exports = {
 
       },
       black: {
-        normal: '#000000',
+        default: '#000000',
+        background: '#010C15',
+      },
+      blue: {
+        title: '#607B96',
       }
     },
-    // FONTS
     fontFamily: {
-      // Poppins
-      'poppins-300': ['"Poppins"', 'sans-serif;'],
-      'poppins-400': ['"Poppins"', 'sans-serif;'],
-      'poppins-500': ['"Poppins"', 'sans-serif;'],
-      'poppins-600': ['"Poppins"', 'sans-serif;'],
+      'fira-code': ['"Fira Code"', 'monospace'],
     }
   },
   variants: {
