@@ -31,3 +31,20 @@ body,
     -ms-border-radius: var(--border-radius);
     -o-border-radius: var(--border-radius);
 }
+
+@media (max-width: 960px) {
+    .container {
+        height: 100svh;
+        padding: 0;
+        background: var(--color-black-background);
+        padding: 2rem;
+    }
+}
+@media (max-width: 720px) {
+    .container {
+        height: 100svh;
+        padding: 0;
+        background: var(--color-black-background);
+        padding: 1rem;
+    }
+}

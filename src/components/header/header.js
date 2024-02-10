@@ -23,11 +23,11 @@ function Header(props) {
     return (
         <header className={`${styles.header} font-fira-code px-4`} >
             {/* LEFT SIDE: TITLE & NAVIGATION */}
-            <div className='flex flex-row gap-20 h-full'>
+            <div className={`${styles.container}`}>
                 <span className='flex justify-center items-center'>
                     <Paragraph text={name} />
                 </span>
-                <div className='flex flex-row'>
+                <div className={`${styles['desktop-hidden']} flex flex-row`} >
                     <Link to={ROUTES.HOME}>
                         <Breadcrumb
                             title={home}
@@ -55,11 +55,11 @@ function Header(props) {
                             onClick={() => handleBreadcrumbClick(`${projects}`)}
                         />
                     </Link>
-                </div>
+                </div> 
 
             </div>
             {/* RIGHT SIDE: CONTACT */}
-            <div className='flex flex-row gap-20 h-full'>
+            <div className={`${styles.container} ${styles['desktop-hidden']}`}>
                 <Breadcrumb
                     title={contact}
                     type='left'
@@ -68,6 +68,13 @@ function Header(props) {
                     onClick={() => handleBreadcrumbClick(`${contact}`)}
                 />
             </div>
+            <div className={`${styles['menu-center']} ${styles['mobile-hidden']} ${styles.center}`}>
+                <span className={`${styles.menu} material-symbols-rounded`}>
+                    menu
+                </span>
+            </div>
+
+
 
         </header>
     )
