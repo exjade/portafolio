@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Header, Container, Wrapper } from '../../components';
+import { Header, Container, Wrapper, Footer } from '../../components';
 
 function Home() {
 
     // Setea el estado inicial en la página de inicio
-    const [activePage, setActivePage] = useState('_hello')
+    const [activePage, setActivePage] = useState('')
 
 
     // Establece la página activa en el estado local
@@ -27,6 +27,13 @@ function Home() {
                 />
 
                 <p>HOME</p>
+
+                <Footer
+                    title='Find me in:'
+                    github='@exjadee'
+                    activePage={activePage}
+                    handleBreadcrumbClick={handleBreadcrumbClick}
+                />
             </Wrapper>
         </Container>
     )
