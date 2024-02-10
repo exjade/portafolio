@@ -17,3 +17,38 @@
     flex-direction: row;
 
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    height: 100%;
+}
+.menu-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 100%;
+    /* width: 50px; */
+}
+
+.menu {
+    background: transparent;
+    color: #607B96;
+    height: 18px;
+    width: 24px;
+
+}
+
+@media (max-width: 960px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+@media (min-width: 960px) {
+    .mobile-hidden {
+        display: none;
+    }
+}

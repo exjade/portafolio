@@ -30,4 +30,42 @@ body,
     -moz-border-radius: var(--border-radius);
     -ms-border-radius: var(--border-radius);
     -o-border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media (max-width: 960px) {
+    .container {
+        height: 100svh;
+        padding: 0;
+        background: var(--color-black-background);
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        height: 100svh;
+        padding: 0;
+        background: var(--color-black-background);
+        padding: 1rem;
+    }
+    .wrapper {
+        background: var(--color-blue-background);
+        height: 100%;
+        border-color: var(--border-wrapper-color);
+        border-width: var(--border-wrapper-width);
+        border-style: var(--border-wrapper-style);
+        border-radius: var(--border-radius);
+        -webkit-border-radius: var(--border-radius);
+        -moz-border-radius: var(--border-radius);
+        -ms-border-radius: var(--border-radius);
+        -o-border-radius: var(--border-radius);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-content: center;
+    }
 }
