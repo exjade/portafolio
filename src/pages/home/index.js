@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Header, Container, Wrapper, Footer } from '../../components';
+import { Header, Container, Wrapper, Footer, Hero } from '../../components';
 
 function Home() {
 
@@ -26,7 +26,7 @@ function Home() {
                     handleBreadcrumbClick={handleBreadcrumbClick}
                 />
 
-                <p>HOME</p>
+                <Hero />
 
                 <Footer
                     title='Find me in:'

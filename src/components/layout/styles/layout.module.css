@@ -19,6 +19,18 @@ body,
     padding: 3rem;
 }
 
+
+.container-middle {
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 .wrapper {
     background: var(--color-blue-background);
     height: 100%;
@@ -36,6 +48,8 @@ body,
     align-content: center;
 }
 
+
+
 @media (max-width: 960px) {
     .container {
         height: 100svh;
@@ -52,6 +66,7 @@ body,
         background: var(--color-black-background);
         padding: 1rem;
     }
+
     .wrapper {
         background: var(--color-blue-background);
         height: 100%;
@@ -68,4 +83,17 @@ body,
         justify-content: start;
         align-content: center;
     }
+}
+
+@media (max-width: 600px) { 
+   
+.container-middle {
+    height: 100%;
+    padding: 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+} 
 }
