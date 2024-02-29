@@ -1,0 +1,31 @@
+.block_code-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.block_code-image-edges{
+    height: auto;
+    width: 580px;
+    opacity: 0.6;
+}
+.block_code-image-center{
+    height: auto;
+    width: 580px;
+    opacity: 0.8;
+    border-radius: 15px;
+    border-color: #1A2A39;
+    border-width: 1px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+@media (max-width: 1600px) { 
+    .block_code-container {
+       display: none;
+    }
+}
