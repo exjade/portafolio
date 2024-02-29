@@ -7,12 +7,12 @@ function Hero() {
     return (
         <div className={`${styles['hero-container']} font-fira-code`}>
             <ContainerMiddle>
-                <div className='flex flex-col justify-between items-start gap-20'>
+                <div className='flex flex-col justify-between items-start h-full py-24  gap-20'>
                     {/* WHO I AM */}
                     <span className={`${styles['hero-left-section']}`}>
                         <p className={`${styles['hero-paragraph']}`} >Hi all. I am </p>
                         <h1 className={`${styles['hero-h1']}`}>Adrian Zamora</h1>
-                        <h3 className={`${styles['hero-h2']}`}>&gt; Font-end Developer</h3>
+                        <h3 className={`${styles['hero-h2']}`}>&gt; Software Developer</h3>
                     </span>
                     {/* GITHUB LINK */}
                     <span className='flex flex-col gap-5 justify-start items-start'>

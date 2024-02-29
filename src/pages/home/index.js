@@ -30,7 +30,7 @@ function Home() {
 
                 <Footer
                     title='Find me in:'
-                    github='@exjadee'
+                    github='@exjade'
                     activePage={activePage}
                     handleBreadcrumbClick={handleBreadcrumbClick}
                 />
