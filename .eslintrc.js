@@ -62,6 +62,7 @@ module.exports = {
     "react/no-unescaped-entities": 0,
     "jsx-a11y/accessible-emoji": 0,
     "react/require-default-props": 0,
+    "react/self-closing-comp": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -80,7 +81,7 @@ module.exports = {
         avoidEscape: true,
         allowTemplateLiterals: true
       }
-    ]
+    ],
   },
   plugins: [
     "react",
