@@ -12,14 +12,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     gap: 3rem;
     justify-items: center;
 }
 .block-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     align-content: center;
     flex-direction: column;
     width: 100%;
