@@ -13,7 +13,7 @@ function Hero() {
                     <span className={`${styles['hero-left-section']}`}>
                         <p className={`${styles['hero-paragraph']}`} >Hi all. I am </p>
                         <h1 className={`${styles['hero-h1']}`}>Adrian Zamora</h1>
-                        <h3 className={`${styles['hero-h2']}`}>&gt; Software Developer</h3>
+                        <h3 className={`${styles['hero-h2']}`}>&gt; FrontEnd Developer</h3>
                     </span>
                     {/* GITHUB LINK */}
                     <span className='flex flex-col gap-5 justify-start items-start'>
