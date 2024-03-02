@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Header, Container, Wrapper, Footer, } from '../../components';
+import { Header, Container, Wrapper, Footer, ThreeColumn, Sidebar  } from '../../components';
 
 function Projects() {
 
-    
+
     // Setea el estado inicial en la página de inicio
     const [activePage, setActivePage] = useState('')
 
@@ -16,27 +16,29 @@ function Projects() {
 
     return (
         <Container>
-        <Wrapper >
-            <Header
-                name='Adrian Zamora'
-                contact='_contact-me'
-                home='_hello'
-                about='_about-me'
-                projects='_projects'
-                activePage={activePage}
-                handleBreadcrumbClick={handleBreadcrumbClick}
-            />
+            <Wrapper >
+                <Header
+                    name='Adrian Zamora'
+                    contact='_contact-me'
+                    home='_hello'
+                    about='_about-me'
+                    projects='_projects'
+                    activePage={activePage}
+                    handleBreadcrumbClick={handleBreadcrumbClick}
+                />
 
-            <div>acerca de mi</div>
+                <ThreeColumn
+                    sidebar={<Sidebar />}
+                />
 
-            <Footer
-                title='Find me in:'
-                github='@exjade'
-                activePage={activePage}
-                handleBreadcrumbClick={handleBreadcrumbClick}
-            />
-        </Wrapper>
-    </Container>
+                <Footer
+                    title='Find me in:'
+                    github='@exjade'
+                    activePage={activePage}
+                    handleBreadcrumbClick={handleBreadcrumbClick}
+                />
+            </Wrapper>
+        </Container>
     )
 }
 

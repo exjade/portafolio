@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Header, Container, Wrapper, Footer } from '../../components';
+import { Header, Container, Wrapper, Footer, ThreeColumn, Sidebar } from '../../components';
 
 function AboutMe() {
 
@@ -26,7 +26,9 @@ function AboutMe() {
                     handleBreadcrumbClick={handleBreadcrumbClick}
                 />
 
-                <div>acerca de mi</div>
+                <ThreeColumn
+                    sidebar={<Sidebar />}
+                />
 
                 <Footer
                     title='Find me in:'
